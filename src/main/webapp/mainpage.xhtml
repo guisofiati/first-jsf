@@ -7,10 +7,14 @@
 </h:head>
 
 <h:body>
-	<h:form>
-		<h1>Title 1</h1>
-		<h:inputText></h:inputText>
-		<h:outputLabel value="Testing JSF" />
+	<h:form id="formPerson">
+		<h1>Form</h1>
+		<h:outputLabel value="Type your name: "/>
+		<h:inputText id="fieldName" value="#{personBean.name}"/> <br/>
+		<h:outputLabel value="Type your last name: "/>
+		<h:inputText id="fieldLastName" value="#{personBean.lastName}"/> <br/>
+		<h:commandButton value="Show name" action="#{personBean.showName}"/> <br/>
+		<h:outputText value="#{personBean.fullName}"/>
 	</h:form>
 </h:body>
 </html>

@@ -7,6 +7,12 @@ public class PersonBean {
 	
 	private String name;
 	private String lastName;
+	private String fullName;
+	
+	public String showName() {
+		fullName = name + " " + lastName;
+		return "";
+	}
 	
 	public String getName() {
 		return name;
@@ -19,5 +25,11 @@ public class PersonBean {
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+	public String getFullName() {
+		return fullName;
+	}
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 }
