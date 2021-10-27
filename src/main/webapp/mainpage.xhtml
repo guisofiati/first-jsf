@@ -8,13 +8,15 @@
 
 <h:body>
 	<h:form id="formPerson">
-		<h1>Form</h1>
-		<h:outputLabel value="Type your name: "/>
-		<h:inputText id="fieldName" value="#{personBean.name}"/> <br/>
-		<h:outputLabel value="Type your last name: "/>
-		<h:inputText id="fieldLastName" value="#{personBean.lastName}"/> <br/>
-		<h:commandButton value="Show name" action="#{personBean.showName}"/> <br/>
-		<h:outputText value="#{personBean.fullName}"/>
+		<h1>Add name</h1>
+		<h:outputLabel value="Type your name: "/> <br/>
+		<h:inputText id="fieldName" value="#{personBean.name}"/>
+		<h:commandButton value="Add name" action="#{personBean.addName}"/> <br/>
+		<h:dataTable value="#{personBean.names}" var="name">
+			<h:column>
+				<h:outputText value="#{name}"/>
+			</h:column>
+		</h:dataTable>
 	</h:form>
 </h:body>
 </html>
