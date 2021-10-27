@@ -4,11 +4,22 @@
 
 <h:head>
 	<title>Hi</title>
+	<script>
+		function changeFieldValue(){
+			var field = document.getElementById('formPerson:name');
+			field.value = 'I clicked in this field';
+			alert('clicked!');
+		}
+	</script>
 </h:head>
 
 <h:body>
 	<h:form id="formPerson">
 	<h1>Hello navigator!</h1>
+	
+	<h:inputText id="name"/>
+	<h:commandButton value="Ir" onclick="changeFieldValue()"/> <br/> <br/>
+	
 	<h:commandButton value="Navegar" action="mainpage"/> <br/>
 	<h:commandButton value="Clique aqui" action="Click"/>
 	</h:form>
