@@ -17,7 +17,7 @@
 	<h:form id="formPerson">
 	<h1>Hello navigator!</h1>
 	
-	<h:inputText id="name"/>
+	<h:inputText id="name" onclick="this.value='Changed the value'" onchange="this.value = this.value.toUpperCase()"/>
 	<h:commandButton value="Ir" onclick="changeFieldValue()"/> <br/> <br/>
 	
 	<h:commandButton value="Navegar" action="mainpage"/> <br/>
