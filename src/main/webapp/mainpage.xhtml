@@ -9,8 +9,11 @@
 <h:body>
 	<h:form id="formPerson">
 		<h1>Add name</h1>
-		<h:outputLabel value="Type your name: "/> <br/>
-		<h:inputText id="fieldName" value="#{personBean.name}"/>
+		<h:outputLabel value="Type your name: " for="fieldName"/> <br/>
+		<h:inputText id="fieldName" value="#{personBean.name}"/> <br/>
+		<h:outputLabel value="Password: " for="password"/> <br/>
+		<h:inputSecret id="password" value="#{personBean.password}"/> <br/>
+		<h:inputTextarea id="text" value="#{personBean.text}" cols="10" rows="10"/>
 		<h:commandButton binding="#{personBean.commandButton}" value="Add name" action="#{personBean.addName}"/> <br/>
 		<h:dataTable value="#{personBean.names}" var="name">
 			<h:column>
