@@ -20,6 +20,7 @@ public class PersonBean {
 		names.add(name);
 		if (names.size() == 3) {
 			commandButton.setDisabled(true);
+			return "navigationpage";
 		}
 		return "";
 	}
