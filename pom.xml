@@ -6,11 +6,13 @@
 	<artifactId>firstjsf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>First project with JSF &amp; PrimeFaces</description>
-	
+	<name>firstjsf Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>com.sun.faces</groupId>
